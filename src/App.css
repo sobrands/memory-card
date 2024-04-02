@@ -1,6 +1,57 @@
-#root {
+header {
+  background-color: rgb(165, 182, 198);
+}
+
+/* Header */
+.header-content {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-weight: 500;
+}
+
+/* Main content */
+main {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  gap: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+}
+
+.card span {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
