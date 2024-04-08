@@ -2,7 +2,7 @@ function MemoryCards({ loading, cards, handleClick }) {
   if (loading)
     return (
       <main>
-        <p>Loading...</p>;
+        <p>Loading...</p>
       </main>
     );
   return (
@@ -10,7 +10,12 @@ function MemoryCards({ loading, cards, handleClick }) {
       <div className="cards">
         {cards.map((card) => {
           return (
-            <button className="card" key={card.id} onClick={handleClick}>
+            <button
+              className="card"
+              id={card.species.name}
+              key={card.id}
+              onClick={handleClick}
+            >
               <img src={card.sprites.front_default} />
               <span>{card.species.name}</span>
             </button>
