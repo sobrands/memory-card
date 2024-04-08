@@ -13,7 +13,7 @@ function App() {
   const [finish, setFinish] = useState(false);
   const [resetFlag, setResetFlag] = useState(false);
 
-  const numCards = 3;
+  const numCards = 9;
 
   if (!finish && currentScore === numCards) {
     setFinish(true);
