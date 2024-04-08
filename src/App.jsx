@@ -87,6 +87,7 @@ function App() {
       setBestScore(currentScore);
     }
     setFinish(false);
+    setLoading(true);
     setResetFlag(!resetFlag);
   }
 
